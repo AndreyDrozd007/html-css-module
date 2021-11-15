@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/slider.css" />
     <script src="scripts/index.js"></script>
 
     <title>Simple-Singolo</title>
@@ -26,6 +27,33 @@
                 <a class="header__item-link" href="#">Contact</a>
           </nav>
         </header>
+
+        <main class="main">
+          <section class="section-slider">
+              <div class="slide-main slide">
+                <a href="#" onclick="minusSlide()" class="prev">
+                  <img src="images/slider/arrow-prev.png" alt="arrow-prev" class="arrow-prev">
+                </a>
+                <img class="slider-main__vertical" src="images/slider/phone-vertical-main.png" alt="">
+                <img class="slider-main__horizontal" src="images/slider/phone-horizontal-main.png" alt="">
+                <a href="#" onclick="plusSlide()" class="next">
+                  <img src="images/slider/arrow-next.png" alt="arrow-next" class="arrow-next">
+                </a>
+              </div>
+
+              <div class="slide-secondary slide" style="display: none;"> 
+                <a href="#" onclick="minusSlide()" class="prev">
+                  <img src="images/slider/arrow-prev.png" alt="arrow-prev" class="arrow-prev">
+                </a>
+                <img class="slide-secondary__background-right" src="images/slider/phone-side-secondary.png" alt="">
+                <img class="slide-secondary__vertical" src="images/slider/phone-middle-secondary.png" alt="">
+                <img class="slide-secondary__background-left" src="images/slider/phone-side-secondary.png" alt="">
+                <a href="#" onclick="plusSlide()" class="next">
+                  <img src="images/slider/arrow-next.png" alt="arrow-next" class="arrow-next">
+                </a>
+              </div>
+          </section>
+        </main>
       </div>
     </div>  
   </body>
