@@ -1,0 +1,65 @@
+/* Section Services */
+.section-service__content{
+    background-color: #F2F2F2;
+}
+
+.section-service__title{
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 30px;
+
+    color: #666D89;
+}
+
+.section-service__text{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #767E9E;
+}
+
+.section-service__content--list-services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 1rem;
+    grid-column-gap: 2rem;
+    padding: 1rem;
+}
+
+.section-service__description{
+    display: grid;
+    grid-template-rows: 59px 1fr;
+    justify-items: start;
+    padding: 2rem 2.2rem 0 2rem;
+}
+
+
+.section-service__item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.section-service__item-title{
+    text-align: start;
+    
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
+
+    color: #666D89;
+}
+
+.section-service__item-text{
+    text-align: start;
+    
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+
+    color: #767E9E;
+}
