@@ -13,6 +13,7 @@
 }
 
 .section-portfolio__title{
+    padding-bottom: 1.5rem;
     font-family: Lato;
     font-weight: 900;
     font-size: 30px;
@@ -33,13 +34,12 @@
     display: grid;
     grid-template-columns: 3em 7em 7em 5em;
     align-items: center;
-    justify-items: center;
-    padding: 0.5em 0.5em 0.5em 1.3em;
+    padding: 0.5em 0.5em 1em 1.7em;
 }
 
 .section-portfolio__nav-item{
-    margin: 0.5em;
-    padding: 0.2em;
+    margin: 0.3em;
+    padding: 0.1em;
     border: 1px solid #767E9E;
     border-radius: 5px;
     list-style-type: none;
