@@ -13,8 +13,14 @@
 }
 
 .wrapper{
+    display: grid;
     max-width: 1020px;
     margin: 0 auto;
 
     text-align: center;
+}
+
+.container{
+    max-width: 940px;
+    margin: 0 40px;
 }
