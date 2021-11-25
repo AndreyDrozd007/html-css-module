@@ -1,5 +1,5 @@
 /* Section Services */
-.section-service__content {
+.section-service {
   background-color: #f2f2f2;
 }
 
@@ -16,7 +16,7 @@
   text-align: start;
   font-family: Lato;
   font-weight: 300;
-  font-size: 18px;
+  font-size: calc(1rem + 0.13vw);
   line-height: 30px;
 
   color: #767e9e;
@@ -24,16 +24,16 @@
 
 .section-service__content--list-services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 1rem;
-  padding: 2rem 2rem 3rem 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+  grid-gap: 2rem 1rem;
+  padding: 2rem 0 3rem 0;
 }
 
 .section-service__description {
   display: grid;
   grid-template-rows: 59px 1fr;
   justify-items: start;
-  padding: 2rem 2rem 1rem 4rem;
+  padding: 2rem 0 1rem 0;
 }
 
 .section-service__item {
@@ -42,6 +42,7 @@
 }
 
 .section-service__item-title {
+  padding-bottom: 7px;
   text-align: start;
 
   font-family: Lato;
@@ -53,7 +54,7 @@
 }
 
 .section-service__item-text {
-  text-align: start;
+  text-align: justify;
 
   font-family: Lato;
   font-weight: 400;
