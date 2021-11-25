@@ -1,5 +1,5 @@
 const filterBox = document.querySelectorAll('.section-portfolio__image');
-document.querySelector('ul').addEventListener('click', event => {
+document.querySelector('.section-portfolio__nav-list').addEventListener('click', event => {
     if(event.target.tagName !=='BUTTON') {
         return false;
     }
