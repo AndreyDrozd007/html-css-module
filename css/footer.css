@@ -1,11 +1,14 @@
+/* Footer */
+
+.footer{
+    background-color: #2D303A;
+    border-top: solid 3px #666D89;
+}
 .footer-content{
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
-    padding: 1.5rem;
-
-    border-top: solid 3px #666D89;
-    background-color: #2D303A;
+    padding: 1.5rem 0 1.5rem 0;
 }
 
 .footer-content__description{
