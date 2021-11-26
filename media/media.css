@@ -1,4 +1,8 @@
-@media screen and (max-width: 375px) {    
+@media screen and (max-width: 375px) {       
+    .wrapper{
+        max-width: 380px;
+    }
+    
     .shadow{
         background: #2D303A;
         opacity: 0.6;
@@ -165,6 +169,10 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 376px) {
+    .wrapper{
+        max-width: 770px;
+    }
+
     /* Slider */
     .slide-secondary__content {
         padding: 108.5px 0px;
