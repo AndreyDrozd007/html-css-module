@@ -11,12 +11,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
-
 .slider-main__vertical{
-    padding: 54px 22px 57px;
+    max-width: 24%;
+    padding: 8% 0;
+}
+
+.slider-main__horizontal{
+    max-width: 50%;
 }
 
 .arrow-prev,
@@ -28,19 +31,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    padding: 139.5px 0;
 }
 
 .slide-secondary__vertical{
     position: absolute;
     z-index: 2;
-    left: 0;
+    left: 7px;
     right: 0;
     margin: auto;
+    max-width: 23%;
 }
 
-.slide-secondary__background-left{
-    position: relative;
-    z-index: 1;
+.slide-secondary__background-left,
+.slide-secondary__background-right {
+    padding: 16% 0;
+    max-width: 16%;
 }
