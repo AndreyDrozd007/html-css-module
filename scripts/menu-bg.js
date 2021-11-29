@@ -7,10 +7,6 @@ const applyTransform = () => {
     menuBg.classList.toggle("active")
 }
 
-const addShadowForWrapper = () => {
-    main.classList.toggle("shadow")
-}
-
 const showMenu = () => {
     headerList.classList.toggle("show");
 }
@@ -28,5 +24,4 @@ menuBg.onclick = () => {
     showMenu()
     showLogo()
     applyTransform()
-    addShadowForWrapper()
 };
