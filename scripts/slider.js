@@ -1,16 +1,21 @@
-let slideIndex = 1;
+const INITIAL_SLIDE = 1; 
+let slideIndex = INITIAL_SLIDE;
+const DISPLAY_TYPES = {
+  flex: "flex",
+  none: "none",
+}
 
 const showSlides = n => {
   const slides = document.getElementsByClassName("slide");
   if (n > slides.length) {
-    slideIndex = 1;
-  } else if (n < 1) {
+    slideIndex = INITIAL_SLIDE;
+  } else if (n < INITIAL_SLIDE) {
     slideIndex = slides.length;
   }
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].style.display = DISPLAY_TYPES.none;
   }
-  slides[slideIndex - 1].style.display = "flex";
+  slides[slideIndex - INITIAL_SLIDE].style.display = DISPLAY_TYPES.flex;
 }
 
 const currentSlide = n => {
@@ -18,11 +23,11 @@ const currentSlide = n => {
 }
 
 const plusSlide = () => {
-  showSlides((slideIndex += 1));
+  showSlides((slideIndex += INITIAL_SLIDE));
 }
 
 const minusSlide = () => {
-  showSlides((slideIndex -= 1));
+  showSlides((slideIndex -= INITIAL_SLIDE));
 }
 
 showSlides(slideIndex);
