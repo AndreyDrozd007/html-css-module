@@ -1,0 +1,49 @@
+/* Section Slider */
+.slider-main{
+    background-color: #F06C64;
+}
+
+.slider-secondary{
+    background-color: #648bf0;
+}
+
+.slide-main__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-main__vertical{
+    max-width: 24%;
+    padding: 8% 0;
+}
+
+.slider-main__horizontal{
+    max-width: 50%;
+}
+
+.arrow-prev,
+.arrow-next {
+    cursor: pointer;
+}
+
+.slide-secondary__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-secondary__vertical{
+    position: absolute;
+    z-index: 2;
+    left: 7px;
+    right: 0;
+    margin: auto;
+    max-width: 23%;
+}
+
+.slide-secondary__background-left,
+.slide-secondary__background-right {
+    padding: 16% 0;
+    max-width: 16%;
+}

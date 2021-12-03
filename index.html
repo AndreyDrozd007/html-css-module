@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="fonts/font.css" />
+    <link rel="stylesheet" href="media/media.css" />
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/portfolio.js" defer></script>
+    <script src="scripts/menu-bg.js" defer></script>
+
+    <title>Simple-Singolo</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <div class="header__logo-container">
+              <img
+                src="images/header-logo/logo.png"
+                alt=""
+                class="logo-image"
+              />
+            </div>
+
+            <nav class="header__navigation">
+              <div class="menu-bg"></div>
+              <ul class="header__list">
+                <img
+                  src="images/header-logo/logo.png"
+                  alt=""
+                  class="logo-image__menu-bg"
+                />
+                <li class="header__items">
+                  <a class="header__link" href="#">Home</a>
+                </li>
+                <li class="header__items">
+                  <a class="header__link" href="#">Services</a>
+                </li>
+                <li class="header__items">
+                  <a class="header__link" href="#">Portfolio</a>
+                </li>
+                <li class="header__items">
+                  <a class="header__link" href="#">About</a>
+                </li>
+                <li class="header__items">
+                  <a class="header__link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <!-- Slider -->
+        <section class="section-slider">
+          <div class="slider-main">
+            <div class="container">
+              <div class="slide-main__content slide">
+                <img
+                  src="images/slider/arrow-prev.png"
+                  onclick="minusSlide()"
+                  alt="arrow-prev"
+                  class="arrow-prev"
+                />
+                <img
+                  class="slider-main__vertical"
+                  src="images/slider/phone-vertical-main.png"
+                  alt=""
+                />
+                <img
+                  class="slider-main__horizontal"
+                  src="images/slider/phone-horizontal-main.png"
+                  alt=""
+                />
+                <img
+                  src="images/slider/arrow-next.png"
+                  onclick="plusSlide()"
+                  alt="arrow-next"
+                  class="arrow-next"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-secondary">
+            <div class="container">
+              <div class="slide-secondary__content slide" style="display: none">
+                <img
+                  src="images/slider/arrow-prev.png"
+                  onclick="plusSlide()"
+                  alt="arrow-prev"
+                  class="arrow-prev"
+                />
+                <img
+                  class="slide-secondary__background-right"
+                  src="images/slider/phone-side-secondary.png"
+                  alt=""
+                />
+                <img
+                  class="slide-secondary__vertical"
+                  src="images/slider/phone-middle-secondary.png"
+                  alt=""
+                />
+                <img
+                  class="slide-secondary__background-left"
+                  src="images/slider/phone-side-secondary.png"
+                  alt=""
+                />
+                <img
+                  src="images/slider/arrow-next.png"
+                  onclick="plusSlide()"
+                  alt="arrow-next"
+                  class="arrow-next"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section-service">
+          <div class="container">
+            <div class="section-service__description">
+              <h2 class="section-service__title">Our services</h2>
+              <p class="section-service__text">
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum. Duis mollis, non commodo luctus, nisi erat
+                porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus,
+                tellus ac cursus commodo, tortor mauris condimentum nibh.
+              </p>
+            </div>
+
+            <div class="section-service__content--list-services">
+              <div class="section-service__item">
+                <img src="images/services-logo/services-item-1.png" alt="" />
+                <div class="section-service__item-description">
+                  <h3 class="section-service__item-title">Custome Designe</h3>
+                  <p class="section-service__item-text">
+                    Curabitur vestibulum eget mauris quis laoreet. Phasellus in
+                    quam laoreet, viverra lacus ut, ultrices velit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="section-service__item">
+                <img src="images/services-logo/services-item-2.png" alt="" />
+                <div class="section-service__item-description">
+                  <h3 class="section-service__item-title">Inovative Ideas</h3>
+                  <p class="section-service__item-text">
+                    Quisque luctus, quam eget molestie commodo, lacus purus
+                    cursus purus, nec rutrum tellus dolor id lorem.
+                  </p>
+                </div>
+              </div>
+
+              <div class="section-service__item">
+                <img src="images/services-logo/services-item-3.png" alt="" />
+                <div class="section-service__item-description">
+                  <h3 class="section-service__item-title">
+                    Love Is The Answer
+                  </h3>
+                  <p class="section-service__item-text">
+                    Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                    turpis, et consequat felis. Quisque condimentum.
+                  </p>
+                </div>
+              </div>
+
+              <div class="section-service__item">
+                <img src="images/services-logo/services-item-4.png" alt="" />
+                <div class="section-service__item-description">
+                  <h3 class="section-service__item-title">Responsive Layout</h3>
+                  <p class="section-service__item-text">
+                    Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
+                    blandit nunc ligula. Praesent elit leo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="section-service__item">
+                <img src="images/services-logo/services-item-5.png" alt="" />
+                <div class="section-service__item-description">
+                  <h3 class="section-service__item-title">24 / 7 Support</h3>
+                  <p class="section-service__item-text">
+                    Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
+                    Nulla a sem erat. Pellentesque egestas venenatis lorem.
+                  </p>
+                </div>
+              </div>
+
+              <div class="section-service__item">
+                <img src="images/services-logo/services-item-6.png" alt="" />
+                <div class="section-service__item-description">
+                  <h3 class="section-service__item-title">Feel Like A Star</h3>
+                  <p class="section-service__item-text">
+                    Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
+                    nibh. Fusce vitae aliquam tellus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="section-portfolio">
+          <div class="container">
+            <div class="section-portfolio__content">
+              <div class="section-portfolio__description">
+                <h3 class="section-portfolio__title">Portfolio</h3>
+                <p class="section-portfolio__text">
+                  Duis mollis, est non commodo luctus, nisi erat porttitor
+                  ligula, eget lacinia odio sem nec elit.
+                </p>
+              </div>
+
+              <nav class="section-portfolio__nav">
+                <ul class="section-portfolio__nav-list">
+                  <li class="section-portfolio__nav-item">
+                    <button
+                      class="button section-portfolio__button--all"
+                      data-filter="all"
+                    >
+                      All
+                    </button>
+                  </li>
+                  <li class="section-portfolio__nav-item">
+                    <button
+                      class="button section-portfolio__button--web"
+                      data-filter="web"
+                    >
+                      Web design
+                    </button>
+                  </li>
+                  <li class="section-portfolio__nav-item">
+                    <button
+                      class="button section-portfolio__button--graphic"
+                      data-filter="graphic"
+                    >
+                      Graphic Design
+                    </button>
+                  </li>
+                  <li class="section-portfolio__nav-item">
+                    <button
+                      class="button section-portfolio__button--artwork"
+                      data-filter="artwork"
+                    >
+                      Artwork
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="section-portfolio__items">
+                <img
+                  class="section-portfolio__image web"
+                  src="images/porfolio/portfolio-1.png"
+                  alt=""
+                />
+                <img
+                  class="section-portfolio__image graphic"
+                  src="images/porfolio/portfolio-2.png"
+                  alt=""
+                />
+                <img
+                  class="section-portfolio__image artwork"
+                  src="images/porfolio/portfolio-3.png"
+                  alt=""
+                />
+                <img
+                  class="section-portfolio__image web"
+                  src="images/porfolio/portfolio-4.png"
+                  alt=""
+                />
+                <img
+                  class="section-portfolio__image graphic"
+                  src="images/porfolio/portfolio-5.png"
+                  alt=""
+                />
+                <img
+                  class="section-portfolio__image artwork"
+                  src="images/porfolio/portfolio-6.png"
+                  alt=""
+                />
+                <img
+                  class="section-portfolio__image web"
+                  src="images/porfolio/portfolio-7.png"
+                  alt=""
+                />
+                <img
+                  class="section-portfolio__image graphic"
+                  src="images/porfolio/portfolio-8.png"
+                  alt=""
+                />
+                <img
+                  class="section-portfolio__image artwork"
+                  src="images/porfolio/portfolio-9.png"
+                  alt=""
+                />
+                <img
+                  class="section-portfolio__image web"
+                  src="images/porfolio/portfolio-10.png"
+                  alt=""
+                />
+                <img
+                  class="section-portfolio__image graphic"
+                  src="images/porfolio/portfolio-11.png"
+                  alt=""
+                />
+                <img
+                  class="section-portfolio__image artwork"
+                  src="images/porfolio/portfolio-12.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-content__description">&#169;Copyright 2013</div>
+            <div class="footer-content__icons">
+              <ul class="footer-icons">
+                <li class="icons">
+                  <a
+                    class="a footer-link--facebook"
+                    href="https://www.facebook.com/"
+                  ></a>
+                </li>
+                <li class="icons">
+                  <a
+                    class="a footer-link--google"
+                    href="https://www.google.by/"
+                  ></a>
+                </li>
+                <li class="icons">
+                  <a
+                    class="a footer-link--twitter"
+                    href="https://twitter.com/"
+                  ></a>
+                </li>
+                <li class="icons">
+                  <a
+                    class="a footer-link--linkedin"
+                    href="https://www.linkedin.com/"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
